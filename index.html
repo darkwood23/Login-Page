@@ -11,7 +11,7 @@
     <script src="script.js" defer></script>
     <div class="everything">
         <div class="image">
-            <img src="/images/leaves.jpg" alt="pic of leaves" width="600px" height="965px">
+            <img src="./images/leaves.jpg" alt="pic of leaves" width="600px" height="965px">
             <p id="display-on-image">Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></p>
         </div>
         <div class="all-elements">
@@ -48,12 +48,12 @@
                     <div class="pair-three">
                         <div class="password">
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password" required>
-                            <p></p>
+                            <input type="password" name="password" id="password" required onchange="check()">
+                            <p id="display"></p>
                         </div>
                         <div class="confirm-password">
                             <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirm-password" id="confirm-password" required>
+                            <input type="password" name="confirm-password" id="confirm-password" required onchange="check()">
                         </div>
                     </div>
                 </form>
