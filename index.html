@@ -11,8 +11,8 @@
     <script src="script.js" defer></script>
     <div class="everything">
         <div class="image">
-            <img src="/images/leaves.jpg" alt="pic of leaves" width="600px">
-            <p>Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></p>
+            <img src="/images/leaves.jpg" alt="pic of leaves" width="600px" height="965px">
+            <p id="display-on-image">Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></p>
         </div>
         <div class="all-elements">
             <div class="title">
@@ -25,36 +25,43 @@
             <fieldset>
                 <form action="#" method="post">
                     <h1>Let's do this!</h1>
-                    <div class="first-name">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name" required>
+                    <div class="pair-one">
+                        <div class="first-name">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name" required>
+                        </div>
+                        <div class="last-name">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name" required>
+                        </div>
                     </div>
-                    <div class="last-name">
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name" required>
+                    <div class="pair-two">
+                        <div class="email">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" minlenght='5' required>
+                        </div>
+                        <div class="phone-number">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="number" name="phone-number" minlength="10" id="phone-number" required>
+                        </div>
                     </div>
-                    <div class="email">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                    <div class="phone-number">
-                        <label for="phone-number">PHONE NUMBER</label>
-                        <input type="number" name="phone-number" id="phone-number" required>
-                    </div>
-                    <div class="password">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password" required>
-                    </div>
-                    <div class="confirm-password">
-                        <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    <div class="pair-three">
+                        <div class="password">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" required>
+                            <p></p>
+                        </div>
+                        <div class="confirm-password">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm-password" required>
+                        </div>
                     </div>
                 </form>
-                <div class="last-stage">
-                    <button type="submit">Create Account</button>
-                    <p>Already have an account? <a href="#">Log in</a></p>
-                </div>
             </fieldset>
+            <div class="last-stage">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
         </div>
     </div>
 </body>
